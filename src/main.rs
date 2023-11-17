@@ -25,10 +25,10 @@ fn main() {
     };
 
     // Initialize log processor
-    let log_processor = log_processor::LogProcessor::new(config.log_config);
+    let mut log_processor = log_processor::LogProcessor::new(config.log_config);
 
     // Initialize dashboard
-    let dashboard = dashboard::Dashboard::new();
+    let mut dashboard = dashboard::Dashboard::new();
 
     // Initialize alert system
     let alert_system = alert_system::AlertSystem::new(config.alert_config);

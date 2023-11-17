@@ -1,10 +1,5 @@
+use crate::config::AlertConfig;
 use crate::log_processor::LogEntry;
-
-pub struct AlertConfig {
-    // TODO
-    // Define alert configuration here
-    // For example, thresholds, patterns, etc.
-}
 
 pub struct AlertSystem {
     config: AlertConfig,

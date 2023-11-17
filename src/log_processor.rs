@@ -1,8 +1,10 @@
 use std::collections::VecDeque;
 
+use crate::config::LogConfig;
+
 // TODO
 // Define a structure for a log entry
-#[derive(Debug)]
+#[derive(Clone, Debug)]
 pub struct LogEntry {
     // TODO
     // Add relevant fields for a log entry, e.g., timestamp, log level, message, etc.
@@ -16,13 +18,15 @@ pub struct LogEntry {
 pub struct LogProcessor {
     // TODO
     // Add fields for log processing, e.g., log sources, buffer, etc.
+    log_config: LogConfig,
     log_buffer: VecDeque<LogEntry>,
 }
 
 impl LogProcessor {
     // Constructor for LogProcessor
-    pub fn new() -> Self {
+    pub fn new(config: LogConfig) -> Self {
         LogProcessor {
+            log_config: config,
             log_buffer: VecDeque::new(),
         }
     }
