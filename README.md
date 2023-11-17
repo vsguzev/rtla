@@ -36,7 +36,12 @@ cargo build --release
 
 To start RTLA, run:
 ```bash
-cargo run
+cargo run <config_path>
+```
+
+For example, run:
+```bash
+cargo run configs/config.toml
 ```
 
 ## Usage Example
