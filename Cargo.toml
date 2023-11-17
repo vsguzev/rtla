@@ -1,0 +1,24 @@
+[package]
+name = "rtla"
+version = "0.1.0"
+authors = ["Vyacheslav Guzev <wcbash@icloud.com>"]
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+serde = { version = "1.0", features = ["derive"] }
+toml = "0.5"
+log = "0.4"
+env_logger = "0.9"
+tempfile = "3.2" # For testing purposes
+
+# Any other dependencies required for the project
+
+[build-dependencies]
+# Dependencies needed to build the project but not for running it
+
+[dev-dependencies]
+# Dependencies needed for development and testing
+# Example:
+# criterion = "0.3"

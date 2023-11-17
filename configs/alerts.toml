@@ -1,0 +1,13 @@
+# Alert configuration for RTLA (Real-Time Log Analyzer)
+
+[[alert_rules]]
+name = "High Error Rate"
+level = "ERROR"
+threshold = 10
+time_window = "1h"
+
+[[alert_rules]]
+name = "Critical System Failure"
+level = "CRITICAL"
+keyword = "System Failure"
+time_window = "30m"
